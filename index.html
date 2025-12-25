@@ -2,64 +2,143 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My First Website</title>
+  <title>GlowVeda | Natural Beauty</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(120deg, #1e3c72, #2a5298);
-      color: white;
+      background: linear-gradient(120deg, #ffdde1, #ee9ca7);
+      color: #333;
       text-align: center;
     }
+
     header {
-      padding: 80px 20px;
+      padding: 100px 20px;
+      color: #fff;
+      background: linear-gradient(120deg, #ff758c, #ff7eb3);
     }
+
     h1 {
       font-size: 3rem;
       margin-bottom: 10px;
     }
+
     p {
-      font-size: 1.2rem;
-      opacity: 0.9;
+      font-size: 1.1rem;
     }
+
     .btn {
       margin-top: 30px;
-      padding: 15px 30px;
-      background: #ff9800;
-      color: #000;
+      padding: 15px 35px;
+      background: #fff;
+      color: #ff4f7a;
       text-decoration: none;
       font-weight: bold;
       border-radius: 30px;
       display: inline-block;
     }
-    html {
-  scroll-behavior: smooth;
-}
-    footer {
-      margin-top: 80px;
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 15px;
       padding: 20px;
-      background: rgba(0,0,0,0.2);
+      width: 220px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      color: #ff4f7a;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 20px;
       font-size: 0.9rem;
     }
   </style>
 </head>
+
 <body>
 
+  <!-- HERO -->
   <header>
-    <section id="about" style="padding:60px 20px; background:#f5f7fa; color:#333;">
-  <h2>About GlowVeda</h2>
-  <p>
-    GlowVeda is a modern beauty & skincare brand focused on
-    natural care, healthy skin, and modern glow.
-  </p>
-</section>
-    <h1>🚀 Welcome to My Website</h1>
-    <p>This site is hosted using GitHub Pages</p>
-<a href="#about" class="btn">Explore More</a>  </header>
+    <h1>🌿 GlowVeda</h1>
+    <p>Natural Beauty • Modern Glow</p>
+    <a href="#about" class="btn">Explore More</a>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About GlowVeda</h2>
+    <p>
+      GlowVeda is a modern beauty & skincare brand focused on
+      natural ingredients, healthy skin, and confident glow.
+    </p>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section>
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="card">
+        <h3>Glow Serum</h3>
+        <p>Brightens & nourishes skin</p>
+      </div>
+      <div class="card">
+        <h3>Herbal Face Wash</h3>
+        <p>Gentle & natural cleanse</p>
+      </div>
+      <div class="card">
+        <h3>Night Cream</h3>
+        <p>Repair & glow overnight</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Contact Us</h2>
+    <p>📸 Instagram: @glowveda</p>
+    <p>📧 Email: glowveda@gmail.com</p>
+  </section>
+
+  <!-- WHATSAPP -->
+  <a class="whatsapp" href="https://wa.me/919999999999" target="_blank">
+    💬 Order on WhatsApp
+  </a>
 
   <footer>
-    © 2025 | Created by You 💻
+    © 2025 GlowVeda | All Rights Reserved
   </footer>
 
 </body>
