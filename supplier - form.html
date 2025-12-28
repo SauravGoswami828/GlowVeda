@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GlowVeda Supplier Registration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+  font-family: Arial;
+  background:#f4f4f4;
+  padding:20px;
+}
+.container{
+  max-width:520px;
+  margin:auto;
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+input, textarea, select{
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+button{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:6px;
+  background:#ff4f7a;
+  color:#fff;
+  font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<h2 align="center">GlowVeda Supplier / Wholesaler Form</h2>
+
+<div class="container">
+
+<form action="https://formspree.io/f/xwkggyrb" method="POST">
+
+<label>Business / Company Name</label>
+<input type="text" name="business_name" required>
+
+<label>Owner Name</label>
+<input type="text" name="owner_name" required>
+
+<label>WhatsApp Number</label>
+<input type="text" name="whatsapp" required>
+
+<label>Email</label>
+<input type="email" name="email">
+
+<label>Business Type</label>
+<select name="type">
+<option>Manufacturer</option>
+<option>Wholesaler</option>
+<option>Distributor</option>
+<option>Dropship Supplier</option>
+</select>
+
+<label>Products You Supply</label>
+<textarea name="products" rows="3"></textarea>
+
+<label>City & State</label>
+<input type="text" name="location">
+
+<button type="submit">Submit Form</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
