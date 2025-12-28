@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -24,14 +22,8 @@
       background: linear-gradient(120deg, #ff758c, #ff7eb3);
     }
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.1rem;
-    }
+    h1 { font-size: 3rem; margin-bottom: 10px; }
+    p { font-size: 1.1rem; }
 
     .btn {
       margin-top: 30px;
@@ -44,9 +36,7 @@
       display: inline-block;
     }
 
-    section {
-      padding: 60px 20px;
-    }
+    section { padding: 60px 20px; }
 
     .products {
       display: flex;
@@ -63,9 +53,7 @@
       box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
 
-    .card h3 {
-      color: #ff4f7a;
-    }
+    .card h3 { color: #ff4f7a; }
 
     .whatsapp {
       position: fixed;
@@ -85,6 +73,28 @@
       padding: 20px;
       font-size: 0.9rem;
     }
+
+    /* WHOLESALER BOX STYLE */
+    .partner-box {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,.12);
+    }
+
+    .partner-btn {
+      padding: 12px 18px;
+      border-radius: 10px;
+      background: #ff4f7a;
+      color: #fff;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
   </style>
 </head>
 
@@ -94,7 +104,9 @@
   <header>
     <h1>🌿 GlowVeda</h1>
     <p>Natural Beauty • Modern Glow</p>
+
     <a href="#about" class="btn">Explore More</a>
+    <a href="#wholesale" class="btn">Become Supplier</a>
   </header>
 
   <!-- ABOUT -->
@@ -107,96 +119,103 @@
   </section>
 
   <!-- PRODUCTS -->
-  <section>
+  <section id="products">
     <h2>Our Products</h2>
+
     <div class="products">
+
       <div class="card">
         <h3>Glow Serum</h3>
         <p>Brightens & nourishes skin</p>
+        <p><b>₹499</b></p>
+
+        <a href="AMAZON_LINK" target="_blank" class="partner-btn">Buy on Amazon</a>
+        <br>
+        <a href="https://wa.me/WHATSAPPNUMBER?text=I%20want%20Glow%20Serum" target="_blank" class="partner-btn" style="background:#25d366;">
+          Order on WhatsApp
+        </a>
       </div>
+
       <div class="card">
         <h3>Herbal Face Wash</h3>
         <p>Gentle & natural cleanse</p>
+        <p><b>₹299</b></p>
+
+        <a href="AMAZON_LINK" target="_blank" class="partner-btn">Buy on Amazon</a>
+        <br>
+        <a href="https://wa.me/WHATSAPPNUMBER?text=I%20want%20Herbal%20Face%20Wash" target="_blank" class="partner-btn" style="background:#25d366;">
+          Order on WhatsApp
+        </a>
       </div>
+
       <div class="card">
         <h3>Night Cream</h3>
         <p>Repair & glow overnight</p>
-      </div>
-    </div>
-    <section id="products" style="padding:45px 0;">
-  <h2 style="text-align:center;">Our Products</h2>
-  <p style="text-align:center;">Premium Natural & Herbal Skincare Products</p>
+        <p><b>₹549</b></p>
 
-  <div style="
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:22px;
-    margin-top:25px;
-  ">
-
-    <!-- PRODUCT CARD -->
-    <div style="
-      width:280px;
-      border-radius:14px;
-      background:#fff;
-      padding:18px;
-      box-shadow:0 5px 15px rgba(0,0,0,.12);
-    ">
-      <img src="https://via.placeholder.com/260"
-        style="width:100%; border-radius:10px;">
-
-      <h3>Glow Serum</h3>
-      <p>Brightens skin & improves texture</p>
-
-      <p><b>₹499</b></p>
-
-      <div style="display:flex; gap:10px; justify-content:center;">
-
-        <a href="AMAZON_LINK"
-          target="_blank"
-          style="padding:9px 12px; border-radius:8px;
-          background:#ff5f7e; color:#fff; text-decoration:none;">
-          Buy on Amazon
-        </a>
-
-        <a href="FLIPKART_LINK"
-          target="_blank"
-          style="padding:9px 12px; border-radius:8px;
-          background:#2874f0; color:#fff; text-decoration:none;">
-          Buy on Flipkart
+        <a href="AMAZON_LINK" target="_blank" class="partner-btn">Buy on Amazon</a>
+        <br>
+        <a href="https://wa.me/WHATSAPPNUMBER?text=I%20want%20Night%20Cream" target="_blank" class="partner-btn" style="background:#25d366;">
+          Order on WhatsApp
         </a>
       </div>
 
-      <a href="https://wa.me/WHATSAPPNUMBER?text=Hi%20I%20want%20Glow%20Serum"
-        target="_blank"
-        style="display:block; margin-top:10px; padding:9px;
-        border-radius:8px; text-align:center;
-        background:#25d366; color:#fff; text-decoration:none;">
-        Order on WhatsApp
-      </a>
     </div>
-
-
-    <!-- COPY THIS CARD FOR MORE PRODUCTS -->
-  </div>
-</section>
   </section>
+
+
+  <!-- ⭐ WHOLESALER / SUPPLIER PARTNERSHIP SECTION -->
+  <section id="wholesale">
+    <h2>🤝 Partner With GlowVeda — Become a Supplier</h2>
+
+    <div class="partner-box">
+
+      <p>
+        We collaborate with manufacturers, wholesalers and private label brands.
+        List your products on our website — FREE of cost.
+      </p>
+
+      <h3>✔ No Listing Fees  
+      ✔ Payment Directly to Supplier  
+      ✔ We Forward Orders  
+      ✔ Pure Dropshipping Model</h3>
+
+      <p><b>We are looking for:</b><br>
+        Skincare • Cosmetics • Herbal • Organic Beauty Products
+      </p>
+
+      <!-- 🔗 CHANGE THIS GOOGLE FORM LINK -->
+      <a href="YOUR_GOOGLE_FORM_LINK"
+         target="_blank"
+         class="partner-btn">
+         Fill Supplier Registration Form
+      </a>
+
+      <br><br>
+
+      <p>
+        📦 Share product images, price list & shipping details.<br>
+        We will review & publish your products on GlowVeda.
+      </p>
+    </div>
+  </section>
+
 
   <!-- CONTACT -->
   <section>
     <h2>Contact Us</h2>
     <p>📸 Instagram: @glowveda</p>
     <p>📧 Email: glowveda@gmail.com</p>
+    <p>📞 Business WhatsApp: +91 99999 99999</p>
   </section>
 
-  <!-- WHATSAPP -->
+  <!-- WHATSAPP FLOAT -->
   <a class="whatsapp" href="https://wa.me/919999999999" target="_blank">
     💬 Order on WhatsApp
   </a>
 
   <footer>
-    © 2025 GlowVeda | All Rights Reserved
+    ©️ 2025 GlowVeda | All Rights Reserved
   </footer>
 
 </body>
